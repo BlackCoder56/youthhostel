@@ -1,0 +1,78 @@
+:root {
+    --main-orange: #ff6600;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--main-orange) !important;
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 15px;
+}
+
+.nav-link:hover {
+    color: var(--main-orange) !important;
+}
+
+.carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.navbar {
+    z-index: 10;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* dark overlay */
+    z-index: 1;
+}
+
+.carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.carousel-inner,
+.carousel-item,
+.carousel-item img {
+    position: relative;
+    z-index: 0;
+}
+
+/* Indicators (progress bars) */
+.carousel-indicators-custom {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 2;
+}
+
+.carousel-indicators-custom div {
+    width: 60px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: background-color 0.3s ease;
+}
+
+.carousel-indicators-custom .active {
+    background-color: #ffffff;
+}
