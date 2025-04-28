@@ -94,9 +94,11 @@ h1, h2, h3, h4, h5 {
 .hero-form button:hover {
     background-color: #ff6600;
 }
+
 .carousel-item {
     position: relative;
 }
+
 .navbar {
     z-index: 10;
 }
@@ -148,6 +150,25 @@ h1, h2, h3, h4, h5 {
 .carousel-indicators-custom .active {
     background-color: #ffffff;
 }
+
+/* Section two */
+.text-orange {
+    color: var(--main-orange) !important;
+}
+
+.card a {
+    /* border: 2px solid #ff6600; */
+    background-color: #ff6600;
+    color: rgb(255, 255, 255);
+    white-space: nowrap; /* ensures text stays in one line */
+  }
+
+.card a:hover {
+    border: 2px solid #ff6600;
+    color: rgb(30, 29, 29);
+}
+
+
 
 /* Responsive adjustments for hero section */
 @media (max-width: 991px) {
