@@ -43,6 +43,15 @@ h1, h2, h3, h4, h5 {
     padding: 0 15px;
 }
 
+.hero-overlay {
+    pointer-events: none;
+  }
+  
+  .hero-overlay h1,
+  .hero-overlay form {
+    pointer-events: auto;
+  }
+  
 .hero-form .form-control {
     min-width: 200px;
 }
