@@ -183,16 +183,12 @@ h1, h2, h3, h4, h5 {
         background-color: var(--main-orange);
       }    
 
-    .carousel-item img {
-      height: 100vh;
-      object-fit: cover;
-    }
   
     .hero-overlay {
         height: 100vh;
-      padding: 20px;
-      top: 50%;
-      transform: translate(-50%, -50%);
+        padding: 20px;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
   
     .hero-overlay h1 {
