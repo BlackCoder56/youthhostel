@@ -136,3 +136,76 @@ h1, h2, h3, h4, h5 {
 .carousel-indicators-custom .active {
     background-color: #ffffff;
 }
+
+/* Responsive adjustments for hero section */
+@media (max-width: 768px) {
+    .hero-form button {
+        background-color: var(--main-orange);
+        border: none;
+        color: white;
+        height: 40px;
+        font-size: 0.9rem;
+        padding: 0 15px;
+      }
+    
+      .hero-form button:hover {
+        background-color: var(--main-orange);
+      }    
+
+    .carousel-item img {
+      height: 100vh;
+      object-fit: cover;
+    }
+  
+    .hero-overlay {
+      padding: 20px;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .hero-overlay h1 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .hero-form {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      max-width: 350px;
+    }
+  
+    .hero-form .form-control {
+      width: 100%;
+      height: 45px;
+    }
+  
+    .hero-form button {
+      width: 100%;
+      height: 45px;
+    }
+}
+  
+/* Even smaller devices */
+@media (max-width: 576px) {
+    .hero-form button {
+        width: 35%;
+        font-size: 0.85rem;
+        padding: 0 12px;
+        }
+
+    .hero-overlay h1 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-indicators-custom {
+        bottom: 10px;
+        gap: 5px;
+    }
+
+    .carousel-indicators-custom div {
+        width: 40px;
+        height: 3px;
+    }
+}
+  
