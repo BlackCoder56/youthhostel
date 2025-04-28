@@ -34,22 +34,22 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#hero" data-bs-toggle="collapse" data-bs-target="#navbarNav">Home</a>
+                        <a class="nav-link" href="#hero" >Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#news" data-bs-toggle="collapse" data-bs-target="#navbarNav">News</a>
+                        <a class="nav-link" href="#features" >News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services" data-bs-toggle="collapse" data-bs-target="#navbarNav">Services</a>
+                        <a class="nav-link" href="#services" >Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#photos" data-bs-toggle="collapse" data-bs-target="#navbarNav">Photos</a>
+                        <a class="nav-link" href="#photos" >Photos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#groupbooking" data-bs-toggle="collapse" data-bs-target="#navbarNav">Group Booking</a>
+                        <a class="nav-link" href="#groupbooking" >Group Booking</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contactus" data-bs-toggle="collapse" data-bs-target="#navbarNav">Contact Us</a>
+                        <a class="nav-link" href="#contactus" >Contact Us</a>
                     </li>
                 </ul>
             </div> 
@@ -100,8 +100,8 @@
     </section>
 
     <!-- Features Section -->
-<section id="features" class="py-5" style="background-color: #ffffff;">
-    <div class="container">
+    <section id="features" class="py-5" style="background-color: #ffffff;">
+        <div class="container">
   
         <div class="row g-4">
             <!-- Map card -->
@@ -148,8 +148,7 @@
   
       </div>
     </div>
-  </section>
-  
+  </section> 
       
 
   <!-- Bootstrap JS -->
@@ -162,6 +161,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js"></script>
 
   <script>
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            const navbarCollapse = document.getElementById('navbarNav');
+            const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+            toggle: false
+            });
+            bsCollapse.hide();
+        });
+    });
+
     $(document).ready(function(){
         $('.dateInput').datepicker({
         // format: 'yyyy-mm-dd',

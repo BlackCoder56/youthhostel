@@ -2,6 +2,10 @@
     --main-orange: #ff6600;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Nunito', sans-serif;
 }
