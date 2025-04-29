@@ -239,6 +239,52 @@ h1, h2, h3, h4, h5 {
     }
 }
 
+#welcome {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #welcome .carousel-item {
+    min-height: 400px;
+    overflow: hidden;
+  }
+  
+  #welcome .carousel-item img {
+    object-fit: cover;
+    height: 65vh;
+    filter: brightness(70%);
+  }
+  
+  #welcome .carousel-caption {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  #welcomeCarousel .carousel-caption {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+  
+  #welcome .icon-bar i {
+    transition: transform 0.3s;
+  }
+  
+  #welcome .icon-bar i:hover {
+    transform: scale(1.2);
+    color: #FFD700 !important;
+  }
+  
+
 /* Even smaller devices */
 @media (max-width: 576px) {
     .hero-form button {
